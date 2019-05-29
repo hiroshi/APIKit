@@ -1,9 +1,25 @@
+// swift-tools-version:5.0
 import PackageDescription
 
 let package = Package(
     name: "APIKit",
-    dependencies: [
-        .Package(url: "https://github.com/antitypical/Result.git", majorVersion: 3),
+    platforms: [
+        .macOS(.v10_10), .iOS(.v8), .tvOS(.v9), .watchOS(.v2)
     ],
-    exclude: ["Sources/APIKit/BodyParameters/AbstractInputStream.m"]
+    products: [
+        .library(name: "APIKit", targets: ["APIKit"]),
+    ],
+    dependencies: [],
+    targets: [
+        .target(
+            name: "APIKit", 
+            dependencies: [],
+            exclude: ["BodyParameters/AbstractInputStream.m"]
+        ),
+         .testTarget(
+            name: "APIKitTests",
+            dependencies: ["APIKit"]
+        ),
+    ],
+    swiftLanguageVersions: [.v5]
 )

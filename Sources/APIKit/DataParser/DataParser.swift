@@ -1,6 +1,6 @@
 import Foundation
 
-/// `DataParser` protocol provides inteface to parse HTTP response body and to state Content-Type to accept.
+/// `DataParser` protocol provides interface to parse HTTP response body and to state Content-Type to accept.
 public protocol DataParser {
     associatedtype Parsed
 
