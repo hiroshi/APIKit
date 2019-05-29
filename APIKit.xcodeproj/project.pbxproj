@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6879E8F6229E4E00009F3285 /* QueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED17E881E229EC700EC1114 /* QueryParameters.swift */; };
+		6879E8F7229E4E74009F3285 /* URLEncodedQueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED17E8A1E22A22900EC1114 /* URLEncodedQueryParameters.swift */; };
 		7F698E501D9D680C00F1561D /* FormURLEncodedBodyParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F698E3C1D9D680C00F1561D /* FormURLEncodedBodyParametersTests.swift */; };
 		7F698E511D9D680C00F1561D /* JSONBodyParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F698E3D1D9D680C00F1561D /* JSONBodyParametersTests.swift */; };
 		7F698E521D9D680C00F1561D /* MultipartFormDataParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F698E3E1D9D680C00F1561D /* MultipartFormDataParametersTests.swift */; };
@@ -472,14 +474,14 @@
 			files = (
 				7F7048D31D9D89BE003C99F6 /* Unavailable.swift in Sources */,
 				7F7048D11D9D89BE003C99F6 /* Request.swift in Sources */,
-				0ED17E891E229EC700EC1114 /* QueryParameters.swift in Sources */,
+				6879E8F6229E4E00009F3285 /* QueryParameters.swift in Sources */,
 				7F7048E81D9D8A08003C99F6 /* DataParser.swift in Sources */,
 				7F7048CE1D9D89BE003C99F6 /* CallbackQueue.swift in Sources */,
 				7F7048DE1D9D89FB003C99F6 /* AbstractInputStream.m in Sources */,
 				7F7048E31D9D89FB003C99F6 /* MultipartFormDataBodyParameters.swift in Sources */,
 				7F7048F01D9D8A12003C99F6 /* ResponseError.swift in Sources */,
 				7F7048EA1D9D8A08003C99F6 /* JSONDataParser.swift in Sources */,
-				0ED17E8B1E22A22900EC1114 /* URLEncodedQueryParameters.swift in Sources */,
+				6879E8F7229E4E74009F3285 /* URLEncodedQueryParameters.swift in Sources */,
 				7F7048D21D9D89BE003C99F6 /* Session.swift in Sources */,
 				7F7048E01D9D89FB003C99F6 /* Data+InputStream.swift in Sources */,
 				7F7048DF1D9D89FB003C99F6 /* BodyParameters.swift in Sources */,
@@ -508,7 +510,6 @@
 				7F698E501D9D680C00F1561D /* FormURLEncodedBodyParametersTests.swift in Sources */,
 				7F698E581D9D680C00F1561D /* RequestTests.swift in Sources */,
 				ECA8314A1DE4DEBE004EB1B5 /* ProtobufDataParserTests.swift in Sources */,
-				0ED17E8E1E22AC8300EC1114 /* URLEncodedQueryParametersTests.swift in Sources */,
 				7F698E5E1D9D680C00F1561D /* TestRequest.swift in Sources */,
 				7F698E601D9D680C00F1561D /* TestSessionTask.swift in Sources */,
 				7FA1690D1D9D8C80006C982B /* HTTPStub.swift in Sources */,

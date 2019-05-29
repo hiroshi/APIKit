@@ -66,8 +66,8 @@ public extension Request {
         return nil
     }
 
-    var queryParameters: [String: Any]? {
-        guard let parameters = parameters as? [String: Any], method.prefersQueryParameters else {
+    var queryParameters: QueryParameters? {
+        guard let parameters = parameters, method.prefersQueryParameters else {
             return nil
         }
 
@@ -87,7 +87,7 @@ public extension Request {
     }
 
     var dataParser: DataParser {
-        return JSONDataParser(readingOptions: [])
+        return JSONDataParser(readingOptions: []) as! Self.DataParser
     }
 
     func intercept(urlRequest: URLRequest) throws -> URLRequest {
@@ -151,7 +151,7 @@ public protocol JSONRequest: Request {}
 
 public extension JSONRequest {
 
-    public var dataParser: JSONDataParser {
+    var dataParser: JSONDataParser {
         return JSONDataParser(readingOptions: [])
     }
 
